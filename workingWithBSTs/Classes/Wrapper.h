@@ -3,7 +3,7 @@
 #ifndef Wrapper_h
 #define Wrapper_h
 
-/* Advanced */
+/* An object wrapper */
 
 using namespace std;
 
