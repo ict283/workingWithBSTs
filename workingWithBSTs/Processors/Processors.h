@@ -1,11 +1,12 @@
 // For review purposes only! Does not represent the actual solution!
 
+/* global methods */
+
+#ifndef Processors_h
+#define Processors_h
+
 #include "Dependencies.h"
 
-int main(void)
-{
 
-    
-        
-        return 0;
-}
+
+#endif /* Processors_h */

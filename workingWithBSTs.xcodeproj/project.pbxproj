@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		528DF3BA26037B4100411F61 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 528DF3B926037B4100411F61 /* main.cpp */; };
+		528DF3C326037B5200411F61 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 528DF3C226037B5200411F61 /* Date.cpp */; };
+		528DF3D3260396B000411F61 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 528DF3D1260396B000411F61 /* Person.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5260E5842603AEA300885220 /* KeyGen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyGen.h; sourceTree = "<group>"; };
 		528DF3B626037B4100411F61 /* workingWithBSTs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = workingWithBSTs; sourceTree = BUILT_PRODUCTS_DIR; };
 		528DF3B926037B4100411F61 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		528DF3C026037B5100411F61 /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Date.h; sourceTree = "<group>"; };
+		528DF3C126037B5200411F61 /* BST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BST.h; sourceTree = "<group>"; };
+		528DF3C226037B5200411F61 /* Date.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Date.cpp; sourceTree = "<group>"; };
+		528DF3C52603814100411F61 /* Processors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Processors.h; sourceTree = "<group>"; };
+		528DF3C82603830200411F61 /* Dependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dependencies.h; sourceTree = "<group>"; };
+		528DF3CF260389FD00411F61 /* Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
+		528DF3D1260396B000411F61 /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
+		528DF3D2260396B000411F61 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +69,41 @@
 			isa = PBXGroup;
 			children = (
 				528DF3B926037B4100411F61 /* main.cpp */,
+				528DF3CC260385B400411F61 /* Dependencies */,
+				528DF3CB260384D300411F61 /* Processors */,
+				528DF3CA2603848A00411F61 /* Classes */,
 			);
 			path = workingWithBSTs;
+			sourceTree = "<group>";
+		};
+		528DF3CA2603848A00411F61 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				528DF3CF260389FD00411F61 /* Wrapper.h */,
+				528DF3C026037B5100411F61 /* Date.h */,
+				528DF3C226037B5200411F61 /* Date.cpp */,
+				528DF3D2260396B000411F61 /* Person.h */,
+				528DF3D1260396B000411F61 /* Person.cpp */,
+				528DF3C126037B5200411F61 /* BST.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		528DF3CB260384D300411F61 /* Processors */ = {
+			isa = PBXGroup;
+			children = (
+				528DF3C52603814100411F61 /* Processors.h */,
+				5260E5842603AEA300885220 /* KeyGen.h */,
+			);
+			path = Processors;
+			sourceTree = "<group>";
+		};
+		528DF3CC260385B400411F61 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				528DF3C82603830200411F61 /* Dependencies.h */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				528DF3BA26037B4100411F61 /* main.cpp in Sources */,
+				528DF3D3260396B000411F61 /* Person.cpp in Sources */,
+				528DF3C326037B5200411F61 /* Date.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
