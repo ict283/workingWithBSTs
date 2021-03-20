@@ -7,6 +7,26 @@
 
 #include "Dependencies.h"
 
+/* headers */
 
+template <class Type>
+void print (Type &item);
+
+template <class Type>
+void increment (Type &item);
+
+/* implementation */
+
+template <class Type>
+void print (Type &item)
+{
+    cout<<item<<endl;
+}
+
+template <class Type>
+void increment (Type &item)
+{
+    item++;
+}
 
 #endif /* Processors_h */
