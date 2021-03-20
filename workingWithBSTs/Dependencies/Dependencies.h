@@ -15,4 +15,6 @@
 #include "../Processors/Processors.h"
 #include "../Processors/KeyGen.h"
 
+using namespace std;
+
 #endif /* Dependencies_h */
