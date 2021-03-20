@@ -24,7 +24,10 @@ int getDay() const;
 int getMonth() const;
 
 int getYear() const;
-
+    
+bool operator < (const Date &d) const;
+    
+bool operator == (const Date &d) const;
 
 private:
 
