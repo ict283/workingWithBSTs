@@ -7,60 +7,19 @@
 
 /* header */
 
-int keyArray[20];
-int keyCount = 0;
+int personKeyGen(string fn, string ln); //simplistic keygen
 
-int personKeyGen(string fn, string ln); //balanced tree
 
 /* implementation */
 
-//very simplistic, only a partial solution, needs work.
-
 int personKeyGen (string fn, string ln)
 {
-        int key;
-
-        if(keyCount==0)
-        {
-                char c1 = fn.substr(0,1)[0];
-                char c2 = ln.substr(0,1)[0];
-                key = (int)c1 * (int)c2;
-                keyArray[keyCount]=key;
-                keyCount++;
-                return key;
-        }
-        else if (keyCount%3==0)
-        {
-                if((keyCount)%6==0)
-                {
-                        key=keyArray[keyCount-2]+(50*keyCount);
-                        keyArray[keyCount]=key;
-                        keyCount++;
-                }
-                else
-                {
-                        key=keyArray[keyCount-2]-(50*keyCount);
-                        keyArray[keyCount]=key;
-                        keyCount++;
-                }
-                return key;
-        }
-        else
-        {
-                if(keyCount%3==1)
-                {
-                        key=keyArray[keyCount-1]-20;
-                        keyArray[keyCount]=key;
-                        keyCount++;
-                }
-                else //keyCount%3>1
-                {
-                        key=keyArray[keyCount-2]+20;
-                        keyArray[keyCount]=key;
-                        keyCount++;
-                }
-                return key;
-        }
+    char c1 = fn.substr(0,1)[0];
+    char c2 = fn.substr(1,2)[0];
+    char c3 = ln.substr(0,1)[0];
+    char c4 = ln.substr(1,2)[0];
+    
+    return (int)c1 * (int)c3 / (int)c2 * (int)c4;
 }
 
 #endif /* KeyGen_h */
