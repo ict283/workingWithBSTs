@@ -105,7 +105,7 @@ void BST<Type>::insert (const Type& insertItem)
 template <class Type>
 void BST<Type>::processNodes(void (*funcPtr)(Type& item)) const
 {
-    traverseBST(root, *funcPtr);
+        traverseBST(root, *funcPtr);
 }
 
 template <class Type>
@@ -123,12 +123,12 @@ void BST<Type>::destroy (node<Type> * &p)
 template <class Type>
 void BST<Type>::traverseBST(node<Type> *p, void (*funcPtr)(Type& item)) const
 {
-    if(p!=NULL)
-    {
-        (*funcPtr)(p->data);
-        traverseBST(p->llink, *funcPtr);
-        traverseBST(p->rlink, *funcPtr);
-    }
+        if(p!=NULL)
+        {
+                (*funcPtr)(p->data);
+                traverseBST(p->llink, *funcPtr);
+                traverseBST(p->rlink, *funcPtr);
+        }
 }
 
 #endif
