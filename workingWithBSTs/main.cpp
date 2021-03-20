@@ -47,6 +47,9 @@ int main(void)
     }
     
     personTree.processNodes(show);
+    
+    //Wrapper<Person> searchItem ("123",Person("",""));
+    //Person result = personTree.search (searchItem).getData();
         
         return 0;
 }
