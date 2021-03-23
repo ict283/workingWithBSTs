@@ -5,6 +5,16 @@
 #ifndef Dependencies_h
 #define Dependencies_h
 
+#include <stdio.h>
+#include <iostream>
+#include <string>
+#include "../Classes/Date.h"
+#include "../Classes/Person.h"
+#include "../Classes/BST.h"
+#include "../Classes/Wrapper.h"
+#include "../Processors/Processors.h"
+#include "../Processors/KeyGen.h"
 
+using namespace std;
 
 #endif /* Dependencies_h */
