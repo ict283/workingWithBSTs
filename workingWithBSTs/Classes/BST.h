@@ -128,6 +128,8 @@ void BST<Type>::traverseBST(node<Type> *p, void (*funcPtr)(Type& item)) const
         (*funcPtr)(p->data);
         traverseBST(p->llink, *funcPtr);
         traverseBST(p->rlink, *funcPtr);
+        
+        //what happens when the order of these statements is changed?
     }
 }
 
