@@ -14,6 +14,18 @@ int main(void)
 
     intTree.processNodes(increment);
     intTree.processNodes(print);
+    
+    /* Part 2: user-defined types */
+
+    BST<Date> dateTree;
+
+    Date dateArray[] =
+    {Date(1,2,2012), Date(3,4,2018), Date(5,6,2022), Date(7,8,2029)}; //unbalanced bst
+
+    for(Date d : dateArray)
+    dateTree.insert(d);
+
+    dateTree.processNodes(print<Date>);
         
         return 0;
 }
