@@ -45,6 +45,8 @@ int main(void)
     }
 
     personTree.processNodes(show);
+    
+    //Person result = personTree.search (5335).getData();
         
         return 0;
 }
