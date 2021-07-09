@@ -7,6 +7,35 @@
 
 #include "Dependencies.h"
 
+using namespace std;
 
+/* headers */
+
+template <class Type>
+void print (Type &item);
+
+template <class Type>
+void increment (Type &item);
+
+void show(Wrapper<Person> &w);
+
+/* implementation */
+
+template <class Type>
+void print (Type &item)
+{
+    cout<<item<<endl;
+}
+
+template <class Type>
+void increment (Type &item)
+{
+    item++;
+}
+
+void show(Wrapper<Person> &w)
+{
+    cout<<w.getKey()<<" -> "<<w.getData()<<endl;
+}
 
 #endif /* Processors_h */
