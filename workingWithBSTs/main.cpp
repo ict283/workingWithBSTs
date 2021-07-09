@@ -26,6 +26,25 @@ int main(void)
     dateTree.insert(d);
 
     dateTree.processNodes(print<Date>);
+    
+    /* Part 3: user-defined types + wrapper */
+
+    Wrapper<Person> personWrapper;
+    BST<Wrapper<Person>> personTree;
+
+    string fnArray[] =
+    {"Elvis","Robert","Ginger","Eddie","Chet","Frank","Jack","Todd","Jimmy"};
+    string lnArray[] =
+    {"Costello","Plant","Baker","VanHalen","Atkins","Zappa","Bruce","Lundgren","Page"};
+
+    for(int i = 0 ; i<9; i++)
+    {
+        int k = personKeyGen(fnArray[i],lnArray[i]);
+        Person p (fnArray[i],lnArray[i]);
+        personTree.insert(personWrapper.build(k,p));
+    }
+
+    personTree.processNodes(show);
         
         return 0;
 }
